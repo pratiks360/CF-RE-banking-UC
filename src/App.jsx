@@ -24,8 +24,8 @@ const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Logo file paths from public folder
-  const mainLogo = "/redington.png";
-  const confluentLogo = "/confluent.png";
+  const mainLogo = `${import.meta.env.BASE_URL}redington.png`;
+  const confluentLogo = `${import.meta.env.BASE_URL}confluent.png`;
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-800">
